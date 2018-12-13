@@ -1,0 +1,444 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+
+
+body {
+    background-color: white;
+    color: black;
+    font-family: OldNewspaperTypes;
+    height: 100%;
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem; 
+
+}
+
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+@font-face {
+    font-family: "Rhinos rocks 1";
+    src: url('../fonts/Rhinos rocks 1.ttf');
+
+}
+@font-face {
+    font-family: OldNewspaperTypes;
+    src: url('../fonts/OldNewspaperTypes.ttf');
+    font-weight: bold;
+}
+@font-face {
+    font-family: Montserrat;
+    src: url('../fonts/montserrat-regular.ttf');
+}
+
+
+
+
+
+
+p {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+
+html {
+    height: 100%;
+  box-sizing: border-box;
+}
+
+/* Nav Bar */
+
+ul {
+    list-style-type: none;
+}
+#header ul { 
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+#header li {
+    float: left;
+}
+#header li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+#header .right {
+    float: right;
+}
+.active {
+    background-color:red;
+    opacity: 0.8;
+
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+h1, .Rhinos {
+    font-family: "Rhinos rocks 1";
+    
+}
+.Rhinos {
+    font-size: 56px;
+    line-height: 50px;
+
+}
+
+
+/* Homepage */
+
+.background {
+    background-image: url("../images/backgroundtest.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: left; 
+
+}
+
+
+#container {
+  padding: 10% 20px;  
+  }
+
+h1 {
+    font-size: 120px;
+
+   
+}
+
+
+#container img {
+    
+    width: 20%;
+    float: right; 
+   
+}
+
+.text {
+    display: inline-block;
+    margin-left: 5%;
+    text-shadow: 2px 2px 4px red;
+    text-align: left;
+}
+h2 {
+    display: inline-block;
+    padding: 20px 15px;
+    margin: 20px 40px 20px 100px;
+    background-color: red;
+    border-radius: 5%;
+    font-size: 25px;
+        
+}
+@media screen and (max-width: 1200px) {
+  #container {
+    font-size: 18pt;
+  }
+}
+
+
+
+/* About */
+
+
+
+#ilike{
+
+     color: black;
+     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+     text-shadow: 2px 2px 4px red;
+}
+
+#ilike2{
+
+     font-color: white;
+
+     border: white;
+      -webkit-text-stroke: 3px white;
+}
+
+#containerAbout {
+    padding: 10px;
+
+}
+#containerAbout img {
+    width: 40%;
+}
+.description {
+    float:right;
+    width: 40%;  
+    padding: 0; 
+}
+#containerAbout h1, #containerAbout p {
+    padding: 20px 20px;
+    text-align: justify;
+}
+#containerAbout h1 {
+    font-size: 90px;
+}
+
+@media screen and (max-width: 1200px) {
+  #containerAbout{
+    font-size: 18pt;
+  }
+}
+
+
+/* Contact */
+
+
+
+#containerContact {
+ padding: 20px 10px; 
+}
+#map {
+    width: 400px;
+    height: 300px;
+    float: left;
+}
+h3, #containerContact p {
+    font-size: 19px;
+    padding: 10px 0;
+}
+
+#containerContact .right {
+    display:inline-block;
+    width: 500px;
+    height: 350px;
+    padding:  20px 60px;
+}
+#containerContact .smaller {
+    font-size: 16px;
+    line-height: 19px;
+    padding: 5px 0;
+}
+#containerContact .down {
+    padding-top: 20px;
+}
+.border {
+    border-bottom: 1px solid;
+}
+.bold {
+    font-weight: bold;
+}
+
+.backgroundcontact {
+    background-image: url("../images/backgroundcontact.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    background-position: left;
+}
+
+
+/* Services */
+
+.background2 {
+    background-image: url("../images/backgroundtest2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: left;
+}
+
+.square {
+    display: inline-block;
+    width: 275px;
+    height: 275px;
+    margin: 10px;
+    border: 10px solid black;
+    background-color: white;
+    padding: 5px;
+}
+#containerServices {
+    padding: 0;
+}
+#containerServices img {
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin: auto;
+}
+#containerServices p {
+    padding: 3px;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+}
+#containerServices .price {
+    color: red;
+}
+#containerServices i {
+    color: #b8860b;    
+}
+#wrap {
+    width: 900px;
+    margin-left: 120px;
+}
+h2.products {
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 0%;
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  #containerServices{
+    font-size: 18pt;
+  }
+}
+
+
+
+
+/* Personalize your Service */
+
+
+
+.services {
+    background-image: url("../images/imagename.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: red;
+    background-position: right;
+}
+#personalize {
+    padding: 20px 0;
+}
+#personalize h1 {
+    text-align: center;
+    padding: 40px;
+    font-size: 110px;
+}
+h4 {
+    text-transform: uppercase;
+    font-size: 18px;
+    padding: 5px 5px 10px 7px;
+}
+
+h5{
+
+    font-size: 30px;
+    
+    font-family: "Rhinos rocks 1";
+
+
+}
+
+
+.column {
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+    padding: 30px;
+    margin: 50px;
+}
+#personalize p {
+    padding: 7px;   
+}
+#personalize .burn {
+    text-align: center;
+    padding: 20px;
+    margin: 50px 30px 10px 30px;
+}
+
+.weapons{
+
+    text-color : red;
+}
+
+
+
+
+/* Footer */
+
+
+
+
+#footer {
+  
+  padding: 1rem;
+}
+
+#footer ul { 
+    margin: 0;
+    padding: 0;  
+
+}
+#footer li {
+    float: left;
+}
+#footer li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+#footer .right {
+    float: right;
+}
+#footer p, .small {
+    font-size: 14px;
+}
+#footer .center {
+    text-align: center;
+    font-size: 12px;
+    clear: both;
+   color: black;
+   -webkit-text-stroke-width: 0.1px;
+   -webkit-text-stroke-color: white;
+}
+.block {
+    display: inline;    
+}
+
+#container, #containerContact, #containerAbout, #containerServices, #containerMain {
+     width: 80%; 
+     margin: 0 auto;
+
+    }
+
+    
+
+.cf:before, .cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+  
+/*Work with us*/
+
+#containerWork {
+    padding: 10px;
+
+}
+#containerWork img {
+    width: 30%;
+}
+.description {
+    float:right;
+    width: 40%;  
+    padding: 20px; 
+}
+#containerWork h1, #containerWork p {
+    padding: 20px 20px;
+    text-align: justify;
+}
+#containerWork h1 {
+    font-size: 100px;
+}
+
+@media screen and (max-width: 1200px) {
+  #containerWork{
+    font-size: 18pt;
+  }
+}
